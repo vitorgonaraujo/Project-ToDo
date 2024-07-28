@@ -1,9 +1,28 @@
-# React + Vite
+# ToDo List Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de uma ToDo List construído utilizando React, com gerenciamento de pacotes via PNPM. O projeto também faz uso das bibliotecas `dayjs` para manipulação de datas e `react-icons` para ícones.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Project-ToDo
+- Node.js v20.14.0
+- PNPM
+
+## Instalação
+
+1. **Clone o repositório:**
+
+   - git clone https://github.com/vitorgonaraujo/Project-ToDo.git
+   - cd Project-ToDo
+
+2. **Instale as dependências:**
+
+   - pnpm install
+
+3. **Execute o projeto:**
+
+   - pnpm run dev
+
+## Bibliotecas Utilizadas
+
+    dayjs: Biblioteca para manipulação de datas.
+    react-icons: Biblioteca para utilização de ícones.
