@@ -12,7 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .icons {
@@ -22,14 +21,13 @@
 
 .trashIcon {
   font-size: 20px;
- 
+
   color: #333333;
 }
 
 .trashIcon:hover {
   cursor: pointer;
-  background-color: rgba(131, 131, 131, 0.322);
-  border-radius: 30%;
+  color: #a31010;
 }
 
 .editIcon {
@@ -39,6 +37,5 @@
 
 .editIcon:hover {
   cursor: pointer;
-  background-color: rgba(131, 131, 131, 0.322);
-  border-radius: 30%;
+  color: #3333ac;
 }
