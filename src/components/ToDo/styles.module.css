@@ -1,0 +1,44 @@
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffc4;
+  min-height: 200px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.noteFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.trashIcon {
+  font-size: 20px;
+ 
+  color: #333333;
+}
+
+.trashIcon:hover {
+  cursor: pointer;
+  background-color: rgba(131, 131, 131, 0.322);
+  border-radius: 30%;
+}
+
+.editIcon {
+  font-size: 20px;
+  color: #333333;
+}
+
+.editIcon:hover {
+  cursor: pointer;
+  background-color: rgba(131, 131, 131, 0.322);
+  border-radius: 30%;
+}
