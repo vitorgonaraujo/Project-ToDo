@@ -11,16 +11,22 @@ Este é um projeto de uma ToDo List construído utilizando React, com gerenciame
 
 1. **Clone o repositório:**
 
+```bash
    git clone https://github.com/vitorgonaraujo/Project-ToDo.git
    cd Project-ToDo
+```
 
 2. **Instale as dependências:**
 
-    pnpm install
+```bash
+   pnpm install
+```
 
 3. **Execute o projeto:**
 
-    pnpm run dev
+```bash
+   pnpm run dev
+```
 
 ## Bibliotecas Utilizadas
 
