@@ -11,18 +11,18 @@ Este é um projeto de uma ToDo List construído utilizando React, com gerenciame
 
 1. **Clone o repositório:**
 
-   - git clone https://github.com/vitorgonaraujo/Project-ToDo.git
-   - cd Project-ToDo
+   git clone https://github.com/vitorgonaraujo/Project-ToDo.git
+   cd Project-ToDo
 
 2. **Instale as dependências:**
 
-   - pnpm install
+    pnpm install
 
 3. **Execute o projeto:**
 
-   - pnpm run dev
+    pnpm run dev
 
 ## Bibliotecas Utilizadas
 
-    dayjs: Biblioteca para manipulação de datas.
-    react-icons: Biblioteca para utilização de ícones.
+- dayjs: Biblioteca para manipulação de datas.
+- react-icons: Biblioteca para utilização de ícones.
