@@ -1,6 +1,6 @@
 # ToDo List Project
 
-Este é um projeto de uma ToDo List construído utilizando React, com gerenciamento de pacotes via PNPM. O projeto também faz uso das bibliotecas `dayjs` para manipulação de datas e `react-icons` para ícones.
+Este é um projeto de uma ToDo List construído utilizando React, com gerenciamento de pacotes via PNPM.
 
 ## Requisitos
 
@@ -32,3 +32,4 @@ Este é um projeto de uma ToDo List construído utilizando React, com gerenciame
 
 - dayjs: Biblioteca para manipulação de datas.
 - react-icons: Biblioteca para utilização de ícones.
+- nanoid: Biblioteca para geração de IDs únicos.
