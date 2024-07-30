@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import ToDo from "../ToDo/todo";
+import ToDo from "./todo";
 
 export default function ToDoList() {
   return (
