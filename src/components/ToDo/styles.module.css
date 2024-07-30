@@ -1,28 +1,57 @@
-.note {
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.todoContainer {
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0));
+}
+
+.todo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #ffffc4;
-  min-height: 200px;
+  height: 250px;
   border-radius: 10px;
   padding: 1rem;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
-.noteFooter {
+.addTodo {
+  background-color: #cbffc3;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: transparent;
+  font-style: italic;
+  width: 100%;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.todoFooter {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .icons {
   display: flex;
+
   gap: 15px;
-}
-
-.trashIcon {
   font-size: 20px;
-
-  color: #333333;
 }
 
 .trashIcon:hover {
@@ -30,18 +59,17 @@
   color: #a31010;
 }
 
-.editIcon {
-  font-size: 20px;
-  color: #333333;
-}
-
 .editIcon:hover {
   cursor: pointer;
-  color: #3333ac;
+  color: #071cd4;
 }
 
-.todoContainer {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.confirmIcon:hover {
+  cursor: pointer;
+  color: #007000;
+}
+
+.cancelIcon:hover {
+  cursor: pointer;
+  color: #a31010;
 }
