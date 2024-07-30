@@ -1,10 +1,10 @@
-import ToDoList from "./components/ToDo/todoList";
-import styles from "./styles.module.css";
+import "./index.css";
+import ToDoList from "./components/ToDo/ToDoList";
 
 function App() {
   return (
     <>
-      <div className={styles.container}>
+      <div className="container">
         <h1>Minha lista de tarefas</h1>
 
         <ToDoList />
