@@ -1,6 +1,6 @@
 # ToDo List Project
 
-Este é um projeto de uma ToDo List construído utilizando React, com gerenciamento de pacotes via PNPM.
+Este é um projeto para estudo de uma ToDo List construído utilizando React, com gerenciamento de pacotes via PNPM.
 
 ## Requisitos
 
