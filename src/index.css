@@ -3,6 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  background-color: #bdcadb;
+}
+
+h1 {
+  color: #3d3c3c;
 }
 
 .container {
