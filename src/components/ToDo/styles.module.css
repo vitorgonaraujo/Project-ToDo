@@ -1,13 +1,13 @@
-.todoContainer {
+/* .todoContainer {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
+}  */
 
 .todo {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
   background-color: #ffffc4;
   height: 250px;
   border-radius: 10px;
@@ -19,27 +19,32 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
 }
 
-.addTodo {
-  background-color: #cbffc3;
-}
-
-textarea {
-  border: none;
-  resize: none;
-  background-color: transparent;
-  font-style: italic;
-  width: 100%;
-}
-
-textarea:focus {
-  outline: none;
-}
-
 .todoFooter {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.addTodo {
+  background-color: #cbffc3;
+}
+
+.textarea {
+  border: none;
+  resize: none;
+  background-color: transparent;
+}
+
+.textarea:focus,
+.textarea:hover {
+  outline: none;
+  background-color: transparent;
+}
+
+.textarea::placeholder {
+  color: #666666;
+}
+
 .icons {
   display: flex;
   gap: 15px;

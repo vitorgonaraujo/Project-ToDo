@@ -1,10 +1,13 @@
 import ToDoList from "./components/ToDo/ToDoList";
-
+import { Typography } from "antd";
 function App() {
+  const { Title } = Typography;
   return (
     <>
       <div className="container">
-        <h1>Minha lista de tarefas</h1>
+        <Title level={1} type="secondary">
+          Minha lista de tarefas
+        </Title>
         <ToDoList />
       </div>
     </>

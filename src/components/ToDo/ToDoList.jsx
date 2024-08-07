@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import styles from "./styles.module.css";
 import ToDo from "./ToDo";
 import AddTodo from "./AddTodo";
 import dayjs from "dayjs";
 import { nanoid } from "nanoid";
+import { Row, Col } from "antd";
 
 export default function ToDoList() {
   const [todos, setTodos] = useState([]);
@@ -83,24 +83,28 @@ export default function ToDoList() {
   };
 
   return (
-    <div className={styles.todoContainer}>
-      <AddTodo onAdd={addTodo} />
+    <Row gutter={[12, 12]}>
+      <Col xs={24} md={12} lg={8}>
+        <AddTodo onAdd={addTodo} />
+      </Col>
       {todos.map((todo) => (
-        <ToDo
-          key={todo.id}
-          id={todo.id}
-          text={todo.text}
-          createdAt={todo.createdAt}
-          onDelete={handleDelete}
-          onEdit={handleEdit}
-          isEditing={isEditing}
-          currentTodo={currentTodo}
-          editText={editText}
-          setEditText={setEditText}
-          saveEdit={saveEdit}
-          cancelEdit={cancelEdit}
-        />
+        <Col xs={24} md={12} lg={8}>
+          <ToDo
+            key={todo.id}
+            id={todo.id}
+            text={todo.text}
+            createdAt={todo.createdAt}
+            onDelete={handleDelete}
+            onEdit={handleEdit}
+            isEditing={isEditing}
+            currentTodo={currentTodo}
+            editText={editText}
+            setEditText={setEditText}
+            saveEdit={saveEdit}
+            cancelEdit={cancelEdit}
+          />
+        </Col>
       ))}
-    </div>
+    </Row>
   );
 }

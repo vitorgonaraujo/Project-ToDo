@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { FaCheck } from "react-icons/fa";
+import { Input, Flex, Typography } from "antd";
 
 export default function AddTodo({ onAdd }) {
   const [text, setText] = useState("");
@@ -22,24 +23,29 @@ export default function AddTodo({ onAdd }) {
     setText("");
   };
 
+  const { TextArea } = Input;
+  const { Text } = Typography;
   return (
-    <div className={`${styles.addTodo} ${styles.todo}`}>
-      <textarea
+    <Flex
+      vertical
+      justify="space-between"
+      className={`${styles.addTodo} ${styles.todo}`}
+    >
+      <TextArea
         className={styles.textarea}
         placeholder="Escreva aqui o seu lembrete..."
-        rows="10"
-        cols="10"
         maxLength={charLimit}
         value={text}
         onChange={handleChange}
-      ></textarea>
+        autoSize
+      ></TextArea>
       <div className={styles.todoFooter}>
-        <small>{charLimit - text.length} caracteres restantes</small>
+        <Text>{charLimit - text.length} caracteres restantes</Text>
         <FaCheck
           className={`${styles.icons} ${styles.confirmIcon}`}
           onClick={handleAdd}
         />
       </div>
-    </div>
+    </Flex>
   );
 }
