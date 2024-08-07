@@ -88,7 +88,7 @@ export default function ToDoList() {
         <AddTodo onAdd={addTodo} />
       </Col>
       {todos.map((todo) => (
-        <Col xs={24} md={12} lg={8}>
+        <Col xs={24} md={12} lg={8} key={todo.id}>
           <ToDo
             key={todo.id}
             id={todo.id}

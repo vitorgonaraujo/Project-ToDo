@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <Title level={1} type="secondary">
+        <Title level={1}>
           Minha lista de tarefas
         </Title>
         <ToDoList />
