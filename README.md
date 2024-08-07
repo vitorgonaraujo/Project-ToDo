@@ -33,3 +33,4 @@ Este é um projeto para estudo de uma ToDo List construído utilizando React, co
 - dayjs: Biblioteca para manipulação de datas.
 - react-icons: Biblioteca para utilização de ícones.
 - nanoid: Biblioteca para geração de IDs únicos.
+- antd: Biblioteca de componentes UI para React.
