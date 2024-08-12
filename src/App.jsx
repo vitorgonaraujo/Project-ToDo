@@ -1,5 +1,5 @@
 import ToDoList from "./components/ToDo/ToDoList";
-import { Typography, Button, ConfigProvider } from "antd";
+import { Typography, ConfigProvider } from "antd";
 
 function App() {
   const { Title } = Typography;
@@ -8,6 +8,7 @@ function App() {
       theme={{
         token: {
           // Seed Token
+          fontFamily: "Montserrat",
           // Alias Token
         },
         components: {
