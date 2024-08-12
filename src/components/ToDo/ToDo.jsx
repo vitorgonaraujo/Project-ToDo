@@ -4,7 +4,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { HiMiniPencilSquare } from "react-icons/hi2";
 import { FaCheck } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import { Input, Flex, Typography } from "antd";
+import { Input, Flex, Typography, Button } from "antd";
 
 export default function ToDo({
   id,
@@ -30,9 +30,8 @@ export default function ToDo({
   return (
     <Flex vertical justify="space-between" className={styles.todo}>
       {isEditing && currentTodo && currentTodo.id === id ? (
-        <div>
+        <Flex vertical>
           <TextArea
-            className={styles.textarea}
             value={editText}
             onChange={handleChange}
             maxLength={charLimit}
@@ -40,38 +39,39 @@ export default function ToDo({
               minRows: 8,
               maxRows: 8,
             }}
+            variant="borderless"
           />
 
-          <div className={styles.todoFooter}>
-            <text>{charLimit - editText.length} caracteres restantes</text>
-            <FaCheck
-              className={`${styles.icons} ${styles.confirmIcon}`}
-              onClick={saveEdit}
-            />
-            <IoClose
+          <Flex justify="space-between" align="center">
+            <Text>{charLimit - editText.length} caracteres restantes</Text>
+            <Button onClick={saveEdit} icon={<FaCheck />} />
+            <Button
               onClick={cancelEdit}
-              className={`${styles.icons} ${styles.cancelIcon}`}
+              icon={<IoClose />}
+              danger
+              type="text"
             />
-          </div>
-        </div>
+          </Flex>
+        </Flex>
       ) : (
         <span>{text}</span>
       )}
-      <div className={styles.todoFooter}>
+
+      {/*Footer da Lista */}
+      <Flex justify="space-between" align="center">
         <Text>{createdAt}</Text>
-        <div className={styles.icons}>
+        <Flex gap={5}>
           {!isEditing && (
-            <HiMiniPencilSquare
-              className={`${styles.icons} ${styles.editIcon}`}
-              onClick={() => onEdit(id)}
-            />
+            <Button onClick={() => onEdit(id)} icon={<HiMiniPencilSquare />} />
           )}
-          <FaRegTrashAlt
-            className={`${styles.icons} ${styles.trashIcon}`}
+          <Button
             onClick={() => onDelete(id)}
+            icon={<FaRegTrashAlt />}
+            danger
+            type="text"
           />
-        </div>
-      </div>
+        </Flex>
+      </Flex>
     </Flex>
   );
 }

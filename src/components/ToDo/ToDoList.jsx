@@ -29,6 +29,7 @@ export default function ToDoList() {
     const updatedTodos = [...todos, newTodo];
     setTodos(updatedTodos);
     localStorage.setItem("todos", JSON.stringify(updatedTodos));
+    console.log(newTodo);
   };
 
   const handleDelete = (id) => {
@@ -62,7 +63,7 @@ export default function ToDoList() {
           ? {
               ...todo,
               text: editText,
-              createdAt: currentDate.format("DD/MM/YYYY HH:mm:ss"),
+              createdAt: currentDate.format("DD/MM/YYYY "),
             }
           : todo
       );
@@ -71,6 +72,7 @@ export default function ToDoList() {
       setIsEditing(false);
       setCurrentTodo(null);
       setEditText("");
+      console.log(currentTodo);
     } else {
       alert("As alterações não foram salvas!");
     }
