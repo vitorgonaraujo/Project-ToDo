@@ -8,9 +8,6 @@ body {
 .container {
   max-width: 960px;
   margin: auto;
-  padding: 15px;
-  min-height: 100vh;
-  text-align: start;
 }
 
 ::-webkit-scrollbar {
