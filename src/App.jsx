@@ -9,6 +9,7 @@ function App() {
         token: {
           // Seed Token
           fontFamily: "Montserrat",
+         
           // Alias Token
         },
         components: {
@@ -32,7 +33,9 @@ function App() {
         },
       }}
     >
-      <div className="container">
+
+      {/* Utilizar Grid ou Flex */}
+      <div className="container"> 
         <Title level={1}>Minha lista de tarefas</Title>
 
         <ToDoList />
