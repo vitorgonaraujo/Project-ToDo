@@ -24,7 +24,7 @@ export default function ToDoList() {
     const newTodo = {
       id: nanoid(),
       text,
-      createdAt: currentDate.format("DD/MM/YYYY HH:mm:ss"),
+      createdAt: currentDate.format("DD/MM/YYYY"),
     };
     const updatedTodos = [...todos, newTodo];
     setTodos(updatedTodos);
@@ -63,7 +63,7 @@ export default function ToDoList() {
           ? {
               ...todo,
               text: editText,
-              createdAt: currentDate.format("DD/MM/YYYY "),
+              createdAt: currentDate.format("DD/MM/YYYY"),
             }
           : todo
       );
@@ -92,7 +92,6 @@ export default function ToDoList() {
       {todos.map((todo) => (
         <Col xs={24} md={12} lg={8} key={todo.id}>
           <ToDo
-            key={todo.id}
             id={todo.id}
             text={todo.text}
             createdAt={todo.createdAt}
